@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "task1": "nodemon scripts/task1.js",
-    "task2": "nodemon scripts/task2.js"
+    "task2": "nodemon scripts/task2.js",
+    "task3": "babel scripts/task3 -d dist && nodemon dist/task3.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/belikandrey/NodeJS#readme",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
